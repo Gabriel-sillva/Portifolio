@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+   color: white;
+    background-image: url(img/teia-de-aranha-com-listras-vermelhas-e-fundo-preto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+header, footer {
+    text-align: center;
+    padding: 30px;  /* tamanho da header e footer  */
+    background: linear-gradient(135deg, #1b1b1b, #4b0f0f, #7b1212); /* degrade */
+    color: #ffffff; 
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff4500, 2px 2px 5px #000; 
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+.fundo{
+    background-color: black;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    
+
+    
+}
+
