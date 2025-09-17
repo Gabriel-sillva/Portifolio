@@ -14,13 +14,18 @@ body {
 }
 
 header, footer {
-    text-align: center;
+    text-align: left;
     padding: 30px;  /* tamanho da header e footer  */
     background: linear-gradient(135deg, #1b1b1b, #4b0f0f, #7b1212); /* degrade */
     color: #ffffff; 
     font-weight: bold;
     text-shadow: 0 0 10px #ff4500, 2px 2px 5px #000; 
 }
+
+p {
+    text-align: center;
+}
+
 
 h1 {
     text-align: center;
@@ -29,12 +34,58 @@ h1 {
 }
 
 .fundo{
-    background-color: black;
-    width: 1000px;
-    height: 1000px;
+    /* background-color: #7b1212; */
+    background: linear-gradient(135deg,  #4b0f0f, #7b1212);
+    width: 1050px;
+    height: 1050px;
     margin: 0 auto;
-    
-
+    border-radius: 20px
     
 }
 
+/* Estilo da seção de projetos */
+.projetos {
+    margin-top: 40px;
+    text-align: center;
+    
+}
+
+.projetos h2 {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #000;
+    
+}
+
+/* Container dos cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    
+}
+
+/* Cada card */
+.card {
+    background: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* box-shadow: 0 0 10px rgba(255, 0, 0, 0.4); */
+    height: 200px;
+    margin: 0 auto; 
+  
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffffcc;
+}
+
+.icone_perfil img{
+    border-radius: 20px;
+    height: 50px;
+    width: 40px;
+    
+}
