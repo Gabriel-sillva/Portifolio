@@ -1,91 +1,121 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+/* Corpo */
 body {
-   color: white;
-    background-image: url(img/teia-de-aranha-com-listras-vermelhas-e-fundo-preto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  
+  color: white;
+  background-image: url(img/teia-de-aranha-com-listras-vermelhas-e-fundo-preto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
 }
 
+/* Header e Footer */
 header, footer {
-    text-align: left;
-    padding: 30px;  /* tamanho da header e footer  */
-    background: linear-gradient(135deg, #1b1b1b, #4b0f0f, #7b1212); /* degrade */
-    color: #ffffff; 
-    font-weight: bold;
-    text-shadow: 0 0 10px #ff4500, 2px 2px 5px #000; 
+  text-align: left;
+  padding: 30px;
+  background: linear-gradient(135deg, #1b1b1b, #4b0f0f, #7b1212);
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 5px #000;
+}
+
+.icone_perfil img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ff4d4d;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 p {
-    text-align: center;
+  text-align: center;
 }
 
-
-h1 {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    
+/* Fundo do main */
+.fundo {
+  background: linear-gradient(135deg, #4b0f0f, #7b1212);
+  width: 1000px;
+  max-width: 90%;
+  min-height: 1400px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 20px;
 }
 
-.fundo{
-    /* background-color: #7b1212; */
-    background: linear-gradient(135deg,  #4b0f0f, #7b1212);
-    width: 1050px;
-    height: 1050px;
-    margin: 0 auto;
-    border-radius: 20px
-    
-}
-
-/* Estilo da seção de projetos */
+/* Seção de projetos */
 .projetos {
-    margin-top: 40px;
-    text-align: center;
-    
+  text-align: center;
 }
 
 .projetos h2 {
-    color: #ff4d4d;
-    margin-bottom: 20px;
-    text-shadow: 0 0 5px #000;
-    
+  color: #ff4d4d;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #000;
 }
 
-/* Container dos cards */
+/* Container de cards */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 /* Cada card */
 .card {
-    background: #000000;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    /* box-shadow: 0 0 10px rgba(255, 0, 0, 0.4); */
-    height: 200px;
-    margin: 0 auto; 
-  
+  background: #000000cc; /* leve transparência */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: auto;
+  min-height: 200px;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #ffffffcc;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffffff55;
 }
 
-.icone_perfil img{
-    border-radius: 20px;
-    height: 50px;
-    width: 40px;
-    
+/* Inputs */
+.card input {
+  width: 80%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ff4d4d;
+  background: #111;
+  color: #fff;
+  outline: none;
+  text-align: center;
+}
+
+/* Botões */
+.card button {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #ff4d4d;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.card button:hover {
+  background: #cc0000;
+}
+
+/* Feedback */
+.card p {
+  margin-top: 10px;
+  font-weight: bold;
 }
