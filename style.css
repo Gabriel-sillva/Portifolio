@@ -11,7 +11,9 @@ body {
   background-image: url(img/teia-de-aranha-com-listras-vermelhas-e-fundo-preto.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: Arial, sans-serif;
+  min-height: 100vh;
 }
 
 /* Header e Footer */
