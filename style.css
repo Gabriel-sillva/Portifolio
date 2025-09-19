@@ -19,7 +19,20 @@ body {
 }
 
 /* Header e Footer */
-header, footer {
+header{
+  display: flex;
+  align-items: center;          /* centraliza verticalmente */
+  justify-content: space-between; /* deixa primeiro à esquerda, último à direita */
+  padding: 20px 40px;
+  background: linear-gradient(135deg, #1b1b1b, #4b0f0f, #7b1212);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  color: #fff
+
+}
+
+
+footer {
   text-align: left;
   /* padding: 30px; */
   background: linear-gradient(135deg, #1b1b1b, #4b0f0f, #7b1212);
@@ -34,6 +47,7 @@ main {
 }
 
 .icone_perfil img {
+  
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -41,7 +55,7 @@ main {
   
 }
 
-h1 {
+ h1 {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -152,9 +166,14 @@ nav {
   /* max-width: 150px; */
 }
 
-.maile_com_teia{
-  justify-content: flex-end;
-  display: block;
-  margin: 0 auto;
+.miles_com_teia {
+  display: flex;
+  height: 200px;
   
 }
+
+.miles_com_teia img{
+  max-width: 120px;
+  display: block;
+}
+
