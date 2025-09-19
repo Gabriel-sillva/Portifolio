@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    
+    <title>Portifolio</title>
+</head>
+<body>
+    <header>
+            <div class="icone_perfil">
+                <img src="img/spider-man-miles-morales-logo.avif" alt="imagem do miles_morales">
+                <h2>Gabriel Silva</h2>
+            </div>
+                <nav>
+                    <li><a href="index.html">Inicio</a></li>
+                </nav>
+            <h1>Seja Bem-Vindo ao Meu Portifolio</h1>
+    </header>
+        
+        <main>
+            
+            <div class="fundo_pagina1">
+                <section class="projetos">
+                    <h2>Meus Projetos</h2>
+                        <div class="cards">
+                            <!-- Projeto 1 - Idade -->
+                            <div class="card">
+                                <h3>Projeto 1 - Verificar Idade</h3>
+                                <input type="number" id="idade" placeholder="Digite sua idade">
+                                <button onclick="checkIdade()">Checar</button>
+                                <p id="r1"></p>
+                            </div>
+
+                            <!-- Projeto 2 - Par ou Ímpar -->
+                            <div class="card">
+                                <h3>Projeto 2 - Par ou Ímpar</h3>
+                                <input type="number" id="numero" placeholder="Digite um número">
+                                <button onclick="checkParImpar()">Checar</button>
+                                <p id="r2"></p>
+                            </div>
+
+                            <!-- Projeto 3 - Maior Número -->
+                            <div class="card">
+                                <h3>Projeto 3 - Maior Número</h3>
+                                <input type="number" id="num1" placeholder="Número 1">
+                                <input type="number" id="num2" placeholder="Número 2">
+                                <button onclick="checkMaior()">Checar</button>
+                                <p id="r3"></p>
+                            </div>
+
+                            <!-- Projeto 4 - Senha -->
+                            <div class="card">
+                                <h3>Projeto 4 - Validação de Senha</h3>
+                                <input type="password" id="senha" placeholder="Digite a senha">
+                                <button onclick="checkSenha()">Entrar</button>
+                                <p id="r4"></p>
+                            </div>
+
+                            <!-- Projeto 5 - Temperatura -->
+                            <div class="card">
+                                <h3>Projeto 5 - Temperatura</h3>
+                                <input type="number" id="temperatura" placeholder="Digite a temperatura">
+                                <button onclick="checkTemper()">Checar</button>
+                                <p id="r5"></p>
+                            </div>
+
+                            <!-- Projeto 6 - Tabuada -->
+                            <div class="card">
+                                <h3>Projeto 6 - Tabuada</h3>
+                                <input type="number" id="tabuada" placeholder="Número de 1 a 9">
+                                <button onclick="checkTabu()">Gerar</button>
+                                <p id="r6"></p>
+                            </div>
+
+                            <!-- Projeto 7 - Jokenpô -->
+                            <div class="card">
+                                <h3>Projeto 7 - Jokenpô</h3>
+                                <input type="text" id="jokenpo" placeholder="pedra / papel / tesoura">
+                                <button onclick="checkJokenpo()">Jogar</button>
+                                <p id="r7"></p>
+                            </div>
+
+                            <!-- Projeto 8 - Fatorial -->
+                            <div class="card">
+                                <h3>Projeto 8 - Fatorial</h3>
+                                <input type="number" id="factor" placeholder="Digite um número">
+                                <button onclick="checkFatorial()">Calcular</button>
+                                <p id="r8"></p>
+                            </div>
+
+                            <!-- Projeto 9 - Formulário -->
+                            <div class="card">
+                                <h3>Projeto 9 - Cadastro</h3>
+                                <input type="text" id="name" placeholder="Nome">
+                                <input type="text" id="cpf" placeholder="CPF">
+                                <input type="email" id="email" placeholder="Email">
+                                <input type="password" id="password" placeholder="Senha">
+                                <input type="text" id="gender" placeholder="Gênero">
+                                <button onclick="checkForms()">Cadastrar</button>
+                                <p id="r9"></p>
+                            </div>
+
+                            <!-- Projeto 10 - Saudações -->
+                            <div class="card">
+                                <h3>Projeto 10 - Saudação</h3>
+                                <input type="text" id="name2" placeholder="Digite seu nome">
+                                <button onclick="checkNameS()">Enviar</button>
+                                <p id="r10"></p>
+                            </div>
+
+                            <!-- Projeto 11 - Matéria Favorita -->
+                            <div class="card">
+                                <h3>Projeto 11 - Matéria Favorita</h3>
+                                <input type="text" id="materiaFav" placeholder="Digite sua matéria">
+                                <button onclick="checkMateriaFav()">Enviar</button>
+                                <p id="r11"></p>
+                            </div>
+
+                            <!-- Projeto 12 - Data -->
+                            <div class="card">
+                                <h3>Projeto 12 - Data Atual</h3>
+                                <input type="text" id="date" placeholder="Digite a data de hoje">
+                                <button onclick="checkDate()">Enviar</button>
+                                <p id="r12"></p>
+                            </div>
+
+                            <!-- Projeto 13 - Calculadora -->
+                            <div class="card">
+                                <h3>Projeto 13 - Mini Calculadora</h3>
+                                <input type="number" id="number1" placeholder="Número 1">
+                                <input type="number" id="number2" placeholder="Número 2">
+                                <input type="text" id="oper" placeholder="+ - * /">
+                                <button onclick="checkCalc()">Calcular</button>
+                                <p id="r13"></p>
+                            </div>
+
+                            <!-- Projeto 14 - Média -->
+                            <div class="card">
+                                <h3>Projeto 14 - Média de Notas</h3>
+                                <input type="number" id="nt1" placeholder="Nota 1">
+                                <input type="number" id="nt2" placeholder="Nota 2">
+                                <input type="number" id="nt3" placeholder="Nota 3">
+                                <button onclick="checkMedia()">Calcular</button>
+                                <p id="r14"></p>
+                            </div>
+
+                            <!-- Projeto 15 - Pintura -->
+                            <div class="card">
+                                <h3>Projeto 15 - Calcular Tinta</h3>
+                                <input type="number" id="width" placeholder="Largura (m)">
+                                <input type="number" id="height" placeholder="Altura (m)">
+                                <button onclick="checkPaint()">Calcular</button>
+                                <p id="r15"></p>
+                            </div>
+
+                            <!-- Projeto 16 - Diferença -->
+                            <div class="card">
+                                <h3>Projeto 16 - Diferença de Números</h3>
+                                <input type="number" id="nn1" placeholder="Número 1">
+                                <input type="number" id="nn2" placeholder="Número 2">
+                                <button onclick="checkDiference()">Calcular</button>
+                                <p id="r16"></p>
+                            </div>
+
+                            <!-- Projeto 17 - Divisão de Notas -->
+                            <div class="card">
+                                <h3>Projeto 17 - Divisão de Notas</h3>
+                                <input type="number" id="numberr1" placeholder="Número 1">
+                                <input type="number" id="numberr2" placeholder="Número 2">
+                                <button onclick="checkDivNote()">Verificar</button>
+                                <p id="r17"></p>
+                            </div>
+                        </div>
+                </section>
+            </div>
+    </main>
+
+    <footer>
+          <div>
+             <p>@Gabriel Silva Portfólio</p>
+
+            <img class="logo_aranhaverso" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXYycnEwOXlj
+            cDZ0aGQybjJ5MXd1c3Bsamhwd3V0aWNwaHAyd3NpcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY
+            3Q9cw/Z1CuNXU0jCy8x0qWHt/giphy.gif" alt="imahem da logo do aranha verso">
+
+        </div>
+    </footer>
+    <script src="script.js"></script>  
+</body>
+</html>
