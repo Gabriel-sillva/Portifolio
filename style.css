@@ -230,22 +230,22 @@ img.Miles_aranha99 {
   body {
     padding: 10px;
   }
-
+  
   header, footer {
     flex-direction: column;
     text-align: center;
   }
-
+  
   .icone_perfil img {
     width: 60px;
     height: 60px;
     margin-bottom: 10px;
   }
-
+  
   h1 {
     font-size: 2rem;
   }
-
+  
   .fundo_pagina1 {
     width: 100%;
     min-height: auto;
@@ -257,12 +257,19 @@ img.Miles_aranha99 {
     min-height: auto;
     padding: 10px;
   }
-
+  
   .cards {
     grid-template-columns: 1fr;
   }
-
+  
   .card {
     min-height: auto;
   }
-}
+  
+  .logo_aranhaverso {
+  display: block;
+  margin: 0 auto;
+   max-width: 150px;  /* tamanho máximo da logo */
+  width: 100%;       /* vai reduzir proporcionalmente em telas pequenas */
+  height: auto;      /* mantém proporção */
+  }
