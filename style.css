@@ -15,6 +15,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; 
+  
   font-family: 'Bangers', cursive; /* Fonte HQ em todo site */
   display: flex;
   flex-direction: column;
@@ -170,7 +171,7 @@ a {
   color: #ff4d4d;
   text-decoration: none;
   font-weight: bold;
-  color: #ffa51f;
+  color: #ffb545;
   text-shadow: 0 0 5px #000;
 }
 
@@ -182,8 +183,8 @@ a:hover {
   padding: 8px 16px;
   border-radius: 10px;
   border: none;
-  background: #ff4d4d;
-  color: #fff;
+  background: #9e0808;
+ color: #ffb545;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s ease;
@@ -273,3 +274,4 @@ img.Miles_aranha99 {
   width: 100%;       /* vai reduzir proporcionalmente em telas pequenas */
   height: auto;      /* mantém proporção */
   }
+}
