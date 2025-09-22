@@ -1,3 +1,6 @@
+/* Importando a fonte (tem que ser no topo!) */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 /* Reset */
 * {
   margin: 0;
@@ -9,61 +12,87 @@
 body {
   color: white;
   background-image: url(img/teia-de-aranha-com-listras-vermelhas-e-fundo-preto.jpg);
-   background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; 
-  font-family: Arial, sans-serif;
+  font-family: 'Bangers', cursive; /* Fonte HQ em todo site */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 20px;
+  letter-spacing: 2px; /* espaçamento de letras */
 }
 
 /* Header e Footer */
-header{
+header {
   display: flex;
-  align-items: center;          /* centraliza verticalmente */
-  justify-content: space-between; /* deixa primeiro à esquerda, último à direita */
-  padding: 20px 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
   background: linear-gradient(135deg, #1b1b1b, #4b0f0f, #7b1212);
   border-radius: 20px;
   margin-bottom: 20px;
-  color: #fff
-
+  color: #fff;
 }
 
-
 footer {
-  text-align: left;
-  /* padding: 30px; */
+  text-align: center; /* centraliza texto e imagem */
   background: linear-gradient(135deg, #1b1b1b, #4b0f0f, #7b1212);
   color: #ffffff;
   font-weight: bold;
   text-shadow: 0 0 5px #000;
   border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px;
 }
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column; /* organiza verticalmente texto + logo */
+  align-items: center;
+  gap: 10px; /* espaço entre texto e logo */
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
 
 main {
   flex: 1;
 }
 
+/* Estilo da logo */
 .icone_perfil img {
-  
   width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 3px solid #ff4d4d;
-  
 }
 
- h1 {
+/* Títulos */
+h1 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 3rem;
+  color: #ff4d4d;
+  text-shadow: 0 0 10px #000;
+}
+
+/* Ajustes HQ para títulos */
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px #000;
 }
 
 p {
   text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
-
 
 nav {
   text-align: center;
@@ -72,8 +101,8 @@ nav {
 /* Fundo do main da pagina 1 */
 .fundo_pagina1 {
   background: linear-gradient(135deg, #4b0f0f, #7b1212);
-  width: 1000px;
-  max-width: 90%;
+  width: 100%;
+  max-width: 1000px;
   min-height: 1400px;
   margin: 0 auto;
   border-radius: 20px;
@@ -83,7 +112,7 @@ nav {
 /* Fundo do main do index.html */
 .fundo_index {
   background: linear-gradient(135deg, #4b0f0f, #7b1212);
-  width: 1000px;
+  width: 600px;
   max-width: 90%;
   min-height: 500px;
   margin: 0 auto;
@@ -111,12 +140,11 @@ nav {
 
 /* Cada card */
 .card {
-  background: #000000cc; /* leve transparência */
+  background: #000000cc;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  height: auto;
   min-height: 200px;
 }
 
@@ -138,6 +166,17 @@ nav {
   text-align: center;
 }
 
+a {
+  color: #ff4d4d;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffa51f;
+  text-shadow: 0 0 5px #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 /* Botões */
 .card button {
   padding: 8px 16px;
@@ -148,6 +187,9 @@ nav {
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s ease;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .card button:hover {
@@ -160,20 +202,67 @@ nav {
   font-weight: bold;
 }
 
-.logo_aranhaverso{
+/* Logo centralizada */
+.logo_aranhaverso {
   display: block;
   margin: 0 auto;
-  /* max-width: 150px; */
 }
 
+/* Miles com teia */
 .miles_com_teia {
   display: flex;
   height: 200px;
-  
 }
 
-.miles_com_teia img{
+.miles_com_teia img {
   max-width: 120px;
   display: block;
 }
 
+img.Miles_aranha99 {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* regras só para celulares ou tablets */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header, footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icone_perfil img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .fundo_pagina1 {
+    width: 100%;
+    min-height: auto;
+    padding: 10px;
+  }
+
+  .fundo_index {
+    width: 100%;
+    min-height: auto;
+    padding: 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+  }
+}
